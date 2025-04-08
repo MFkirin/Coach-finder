@@ -1,5 +1,5 @@
 <template>
-    <base-dialog :show="!!error" @close="handleError">
+    <base-dialog :show="!!error" title="An error ocurred" @close="handleError">
     <p>{{ error }}</p>
     </base-dialog>
     <section><coach-filter @change-filter="setFilters"></coach-filter></section>
