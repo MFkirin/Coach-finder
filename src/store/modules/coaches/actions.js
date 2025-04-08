@@ -29,7 +29,8 @@ export default {
             `https://vue-http-demo-45729-default-rtdb.firebaseio.com/coaches.json`);
         const responseData = await response.json();
         if (!response.ok) {
-            // error
+            const error = new Error(responseData.message || 'Fail to fetch!') ;
+            throw error;
         }
 
         const coaches = [];
