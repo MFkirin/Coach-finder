@@ -26,7 +26,7 @@
 <script>
 import CoachItem from '../../components/coaches/CoachItem.vue';
 import CoachFilter from '../../components/coaches/CoachFilter.vue';
-import { handleError } from 'vue';
+
 export default {
     components: {
         CoachItem,
