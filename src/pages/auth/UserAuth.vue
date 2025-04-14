@@ -77,6 +77,8 @@ export default {
             }
 
             this.isLoading = false;
+            this.email = '';
+            this.password = '';
         },
         switchAuthMode() {
             if (this.mode === 'login') {
