@@ -4,7 +4,7 @@ export default {
         state.userId = payload.userId;
         state.didAutoLogout = false;
     },
-    setAutoLogout(){
+    setAutoLogout(state){
         state.didAutoLogout = true;
     }
 };
